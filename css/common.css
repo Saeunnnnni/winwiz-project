@@ -5,6 +5,7 @@
   min-width: 1500px;
 }
 header {
+  top : 0;
   position: fixed;
   height: 90px;
   width: 100%;
