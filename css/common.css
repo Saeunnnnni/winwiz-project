@@ -25,12 +25,11 @@ header .logo > a {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  width: 120px;
+  width: 137px;
   height: 90px;
   display: block;
-  margin-left: 160px;
-  margin-right: 50px; 
   text-indent: -9999px;
+
 }
 
 header .gnb {
@@ -38,7 +37,8 @@ header .gnb {
   text-align: center;
 }
 header .gnb > li {
-  padding-left: 50px;
+ 
+  padding-left: 120px;
   height: 410px;
 }
 
@@ -111,21 +111,15 @@ header .sub-gnb li a:hover {
 main{
   padding-top: 90px;
   width: 100%;
-  height: 1000px;
- 
-
-  
 }
 
+/* main */
 
 footer{
   width:100%;
   height: 310px;
   background: #3195d9;  
-  
- 
- 
-}
+ }
 footer .inner{
   width: 100%;
   max-width: 1500px;
@@ -137,11 +131,12 @@ footer .inner{
   display: flex; 
 }
 .btnM-list{
-  margin: 10px 100px 30px ;
+  margin: 10px 0px 30px ;
   line-height: 30px;
   width:100%;  
   display: flex;
-  justify-content: space-around;
+  justify-content:space-between;
+  margin-right: 40px;
 }
 
 .btnM-list>li>a{  
@@ -172,28 +167,21 @@ footer .inner{
 
 }
 .footer-icon{ 
-  margin:20px;
+  margin:20px 0; 
   display: flex;
   justify-content: flex-start;
 }
 .bottom-img{
   width: 197px; 
-  height: 70px; 
-  margin-left: 160px;
   
 }
 .bottom-text{
+  /* width: 1000px; */
   color: #000000;
   font-size: 13px;
-  margin-top: 10px; 
-  margin-left: 35px;
+  margin : 10px 520px 0px 100px;
 }
 
-.bottom-icon{
-  float: left;
-  width: 298px;
-  height: 70px;  
-  margin-left: 220px;
+.bottom-icon{  
+  width: 298px;  
 }
-
-/* footer */
