@@ -116,9 +116,7 @@ main{
 /* main */
 
 footer{
-  width:100%;
-  height: 310px;
-  background: #3195d9;  
+  width:100%;  
  }
 footer .inner{
   width: 100%;
@@ -129,6 +127,8 @@ footer .inner{
 .bottom-menu{
   width: 100%; 
   display: flex; 
+  background: #3195d9;  
+  height: 310px;
 }
 .btnM-list{
   margin: 10px 0px 30px ;
