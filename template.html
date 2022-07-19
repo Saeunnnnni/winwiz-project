@@ -9,72 +9,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" href="./images/common/KakaoTalk_20220705_140946097.png">
+   
+    <script
+      src="https://kit.fontawesome.com/f56809b13d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" href="./images/common/KakaoTalk_20220705_140946097.png">
+    <link rel="apple-touch-icon" href="./images/common/KakaoTalk_20220705_140946097.png">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="medium.css" />
+    <link rel="stylesheet" media="(max-width: 768px)" href="mobile.css" />
   </head>
   <body>
-   <div class="wrapper">
-    <header class="section">
    
-      <div class="subCover"></div>
-      <div class="inner">
-        
-        <ul class="gnb">
-          <h1>
-            <div class="logo"><a href="#">윈위즈</a></div>
-          </h1>
-          <li>
-            <a href="#"><span>기업정보</span></a>
-            <ul class="sub-gnb com_info">
-              <li><a href="#">회사개요</a></li>
-              <li><a href="#">회사연혁</a></li>
-              <li><a href="#">회사조직도</a></li>
-              <li><a href="#">CEO인사말</a></li>
-              <li><a href="#">오시는길</a></li>
-              <li><a href="#">홍보센터</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><span>사업분야</span></a>
-            <ul class="sub-gnb bs_area">
-              <li><a href="#">사업영역</a></li>
-              <li><a href="#">서비스영역</a></li>
-              <li><a href="#">구축사례</a></li>
-              <li><a href="#">파트너사</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><span>솔루션</span></a>
-            <ul class="sub-gnb solution">
-              <li><a href="#">RMS</a></li>
-              <li><a href="#">POS</a></li>
-              <li><a href="#">WIZMALL</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><span>인재채용</span></a>
-            <ul class="sub-gnb recruit">
-              <li><a href="#">채용안내</a></li>
-              <li><a href="#">인사시스템</a></li>
-              <li><a href="#">복리후생</a></li>
-              <li><a href="#">입사지원</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><span>고객지원</span></a>
-            <ul class="sub-gnb client">
-              <li><a href="#">상담문의</a></li>
-              <li><a href="#">업체유지보수</a></li>
-              <li><a href="#">인트라넷</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <div class="black-bg">
+      <header class="section">
+        <div class="subCover"></div>
+        <div class="inner">
+          <ul class="gnb">
+            <h1>
+              <div class="logo"><a href="#">윈위즈</a></div>
+            </h1>
+            <div id="toggle-btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="gnb-list">
+              <li>
+                <a href="#" class="tit"><span>기업정보</span></a>
+                <ul class="sub-gnb com_info">
+                  <li><a href="#">회사개요</a></li>
+                  <li><a href="#">회사연혁</a></li>
+                  <li><a href="#">회사조직도</a></li>
+                  <li><a href="#">CEO인사말</a></li>
+                  <li><a href="#">오시는길</a></li>
+                  <li><a href="#">홍보센터</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="tit"><span>사업분야</span></a>
+                <ul class="sub-gnb bs_area">
+                  <li><a href="#">사업영역</a></li>
+                  <li><a href="#">서비스영역</a></li>
+                  <li><a href="#">구축사례</a></li>
+                  <li><a href="#">파트너사</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="tit"><span>솔루션</span></a>
+                <ul class="sub-gnb solution">
+                  <li><a href="#">RMS</a></li>
+                  <li><a href="#">POS</a></li>
+                  <li><a href="#">WIZMALL</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="tit"><span>인재채용</span></a>
+                <ul class="sub-gnb recruit">
+                  <li><a href="#">채용안내</a></li>
+                  <li><a href="#">인사시스템</a></li>
+                  <li><a href="#">복리후생</a></li>
+                  <li><a href="#">입사지원</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="tit"><span>고객지원</span></a>
+                <ul class="sub-gnb client">
+                  <li><a href="#">상담문의</a></li>
+                  <li><a href="#">업체유지보수</a></li>
+                  <li><a href="#">인트라넷</a></li>
+                </ul>
+              </li>
+            </div>
+            <!--gnb-list-->
+          </ul>
+          <!--gnb-->
+        </div>
+        <!--inner-->
+      </header>
+      <!-- header -->
+    </div><!--black-bg-->
 
-    <!-- header -->
     <main class="main">
-
    </main>
     <footer>
       
@@ -146,10 +160,37 @@
               </ul>
         </div>
         <!-- //company-info -->
-      </div>
+   
        
       
     </footer>
   </div>
+  <script>
+    document.querySelectorAll(".tit").forEach((e) => {
+      e.addEventListener("mouseover", function () {
+        document.querySelector(".subCover").style.display = "block";
+        document.querySelectorAll(".sub-gnb").forEach((e) => {
+          e.style.display = "block";
+        });
+
+        document.querySelector(".black-bg").style.background =
+          "rgba(0,0,0,0.5)";
+        document.querySelector(".black-bg").style.height = "100%";
+        document.querySelector(".gnb").style.height = "630px";
+      });
+    });
+
+    document
+      .querySelector(".gnb-list")
+      .addEventListener("mouseleave", function () {
+        document.querySelector(".subCover").style.display = "none";
+        document.querySelectorAll(".sub-gnb").forEach((e) => {
+          e.style.display = "none";
+          document.querySelector(".black-bg").style.background = "none";
+        });
+        document.querySelector(".black-bg").style.height = "0";
+        document.querySelector(".gnb").style.height = "130px";
+      });
+  </script>
 </body>
 </html>
