@@ -1,0 +1,245 @@
+@import url(reset.css);
+.bigImg{
+      width: 100%; 
+      height: 498px;
+      background: url(../../images/common/sub_img_1.png) no-repeat center / cover;
+  }
+  
+     .sub-wrap-title{
+      margin-top: 60px;   
+      font-size: 38px;
+      font-weight: 700;
+      color :#090909;
+      text-align: center;
+      }
+  .sub-wrap-title p::after{
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      margin: 5px auto;
+      background-color: #090909;
+  }
+  .sub_navBar{
+    height: 40px;  
+    border-bottom: 1px solid #a0a3a3;
+  }
+  
+  .sub_navBar_list{
+     
+      margin-top: 70px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #3f4243; 
+      display: flex;
+      justify-content:center; 
+     
+     
+  }
+  .sub_navBar_list>li{
+    margin-left: 80px;
+ }
+ /*  .sub_navBar_list>li>a:hover::after{
+     margin: 22px auto ;
+     display: block;
+     content:'';
+     border-bottom: 3px solid #3195d9;
+     transition :  0.5s
+   }
+
+.sub_navBar_list li a {
+  display: inline-block;
+} */
+.sub_navBar_list li a::after {
+  margin: 22px auto ;
+  display: block;
+  content: '';
+  width: 100%;
+  border-bottom: 3px solid #3195d9;
+
+}
+
+.sub_navBar_list li:nth-child(2)>a::after {
+  display: none;
+}
+
+.contentsTitle_des {
+  margin-bottom: 120px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.contentsListTitle {
+  color: #3275CB;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.board-contents-section {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.board-contents-section .title {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.consultingInfo {
+  margin: 30px 0 70px;
+   
+}
+.consultingInfo p {
+    margin-bottom: 12px;
+}
+
+.board_qa_wrap {
+    border-top: 2px solid #3275CB;
+    font-size: 0;
+}
+.board_qa_wrap div {
+  border-bottom: 1px solid #ddd;
+}
+
+.board_qa_wrap dl {
+  font-size: 0;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+}
+
+.board_qa_wrap dt {
+  background: #e5e5e5;
+  width: 25%;
+  height: 100%;
+  padding: 10px 0;
+  text-indent: 10%;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.board_qa_wrap dt,
+.board_qa_wrap dd {
+  display: inline-block;
+}
+
+
+
+.board_qa_wrap .qaclassify,
+.board_qa_wrap .writer,
+.board_qa_wrap .address {
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.board_qa_wrap .qaclassify dl,
+.board_qa_wrap .writer dl,
+.board_qa_wrap .address dl {
+  width: 50%;
+}
+
+.board_qa_wrap .qatitle dt,
+.board_qa_wrap .contents dt,
+.board_qa_wrap .file dt {
+  width: 12.5%;
+}
+
+.board_qa_wrap dd input,
+.board_qa_wrap dd select
+{
+  width: 98%;
+  height: 30px;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+}
+
+
+.qaclassify dl {
+  position: relative;
+}
+
+.board_qa_wrap dd {
+  width: 75%;
+}
+
+.board_qa_wrap .qatitle dd {
+  width: 87.5%;
+}
+.board_qa_wrap .qatitle input {
+  width: 99.2%;
+}
+
+.board_qa_wrap .contents dl {
+  width: 100%;
+  height: 300px;
+}
+
+.board_qa_wrap .contents dt {
+  overflow: hidden;
+}
+
+.board_qa_wrap .contents dd {
+  width: 87.5%;
+  position: relative;
+  height: 100%;
+}
+
+
+.board_qa_wrap .contents textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.5%;
+  height: 98%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  margin: 5px;
+  resize: none;
+}
+
+.board_qa_wrap .file dd {
+  width: 25%;
+}
+
+.board_qa_wrap .file label {
+  background: #3275CB;
+  color: #fff;
+  padding: 5px 10px 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.board_qa_wrap .file input[type="text"] {
+  width: 97%;
+}
+
+input::file-selector-button {
+  background: #fff;
+  border: none;
+  color: #fff;
+  text-align: right;
+  padding: 3px 10px;
+  vertical-align: middle;
+  width: 1px;
+}
+
+.qa_btn {
+  padding: 12px 70px;
+  background: #3275CB;
+  color: #fff;
+  border: 0;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+
+main{
+  width: 100%;
+}
+
+/* main */

@@ -1,0 +1,224 @@
+@import url(reset.css);
+.bigImg{
+  width: 100%; 
+  height: 498px;
+  background: url(../../images/common/sub_img_1.png) no-repeat center / cover;
+}
+
+ .sub-wrap-title{
+  margin-top: 60px;   
+  font-size: 38px;
+  font-weight: 700;
+  color :#090909;
+  text-align: center;
+  }
+.sub-wrap-title p::after{
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #090909;
+}
+.sub_navBar{
+height: 40px;  
+border-bottom: 1px solid #a0a3a3;
+}
+
+.sub_navBar_list{
+ 
+  margin-top: 70px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #3f4243; 
+  display: flex;
+  justify-content:center; 
+ 
+ 
+}
+.sub_navBar_list>li{
+margin-left: 80px;
+}
+/*  .sub_navBar_list>li>a:hover::after{
+ margin: 22px auto ;
+ display: block;
+ content:'';
+ border-bottom: 3px solid #3195d9;
+ transition :  0.5s
+}*/
+
+/* .sub_navBar_list li a {
+display: inline-block;
+}  */
+.sub_navBar_list li a::after {
+margin: 22px auto ;
+display: block;
+content: '';
+width: 100%;
+border-bottom: 3px solid #3195d9;
+
+}
+.sub_navBar_list li:nth-child(2)>a::after {
+display: none;
+}
+.sub_navBar_list li:nth-child(3)>a::after {
+  display: none;
+}
+.sub_navBar_list li:nth-child(4)>a::after {
+    display: none;
+} 
+
+ 
+.contentsTitle_des {
+  margin: 30px 0 70px;
+  font-size: 18px;
+  line-height: 35px;
+}
+.util_area {
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+#total-count {
+  float: left;
+  line-height: 35px;
+}
+#total-count em {
+  color: #3275CB;
+  font-style: normal;
+}
+.search-area {
+  float: right;
+  display: flex;
+}
+.search-area .select {
+  width: 80px;
+  position: relative;
+  margin-right: 10px;
+}
+.search-area .all {
+  display: block;
+  height: 35px;
+  width: 100%;
+  font-style: normal;
+  border: 1px solid #ddd;
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.search-area i {
+  position: absolute;
+  right: 10%;
+  top: 25%;
+}
+.select select {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.search-area .input input {
+  width: 200px;
+  height: 35px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+.board-section {
+  margin-bottom: 50px;
+}
+
+.search-area button {
+  width: 80px;
+  height: 35px;
+  background-color: #3275CB;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.board_lists {
+  border-top: 2px solid #333ccc;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.board_lists > div {
+  font-size: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.board_lists > div > div {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 15px 0;
+}
+.board_lists .top {
+  background: #e5e5e5;
+  font-weight: 600;
+}
+.board_lists .num {
+  width: 10%;
+  border-right: 1px solid #ddd;
+  box-sizing:border-box;
+  font-size: 16px;
+}
+.board_lists .division {
+  width: 10%;
+  border-right: 1px solid #ddd;
+  box-sizing:border-box;
+  font-size: 16px;
+
+}
+.board_lists .contents {
+  width: 40%;
+  text-align: left;
+  border-right: 1px solid #ddd;
+  padding-left: 25px;
+  box-sizing:border-box;
+  font-size: 16px;
+
+}
+.board_lists .contents:hover {
+  text-decoration: underline;
+}
+.board_lists .top .contents {
+  text-align: center;
+}
+.board_lists .top .contents:hover {
+  text-decoration: none;
+}
+.board_lists .period {
+  width: 20%;
+  border-right: 1px solid #ddd;
+  box-sizing:border-box;
+    font-size: 16px;
+
+}
+.board_lists .situation {
+  width: 20%;
+  font-size: 16px;
+
+}
+
+.board_page {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.board_page a {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+
+main{
+  width: 100%;
+}
+
+/* main */

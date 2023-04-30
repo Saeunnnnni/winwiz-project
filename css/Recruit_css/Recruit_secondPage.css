@@ -1,0 +1,137 @@
+
+@import url(reset.css);
+.bigImg{
+  width: 100%; 
+  height: 498px;
+  background: url(../../images/common/sub_img_1.png) no-repeat center / cover;
+}
+
+ .sub-wrap-title{
+  margin-top: 60px;   
+  font-size: 38px;
+  font-weight: 700;
+  color :#090909;
+  text-align: center;
+  }
+.sub-wrap-title p::after{
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #090909;
+}
+.sub_navBar{
+height: 40px;  
+border-bottom: 1px solid #a0a3a3;
+}
+
+.sub_navBar_list{
+ 
+  margin-top: 70px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #3f4243; 
+  display: flex;
+  justify-content:center; 
+ 
+ 
+}
+.sub_navBar_list>li{
+margin-left: 80px;
+}
+/*  .sub_navBar_list>li>a:hover::after{
+ margin: 22px auto ;
+ display: block;
+ content:'';
+ border-bottom: 3px solid #3195d9;
+ transition :  0.5s
+}*/
+
+/* .sub_navBar_list li a {
+display: inline-block;
+}  */
+.sub_navBar_list li a::after {
+margin: 22px auto ;
+display: block;
+content: '';
+width: 100%;
+border-bottom: 3px solid #3195d9;
+
+}
+.sub_navBar_list li:nth-child(2)>a::after {
+display: none;
+}
+.sub_navBar_list li:nth-child(3)>a::after {
+  display: none;
+}
+.sub_navBar_list li:nth-child(4)>a::after {
+    display: none;
+} 
+.contentsTitle_des {
+  margin: 30px 0 70px;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.contentsListTitle {
+  color: #3275cb;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.board-contents-section .title {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.board_list {
+  border-top: 2px solid #3275cb;
+  border-bottom: 1px solid #ddd;
+}
+.board_list .info {
+  border-bottom: 1px solid #ddd;
+}
+.board_list dl {
+  display: inline-block;
+  /* width: 100%; */
+}
+.board_list dt,
+.board_list dd {
+  display: inline-block;
+}
+.board_list dt {
+  background: #e5e5e5;
+  padding: 10px 75px;
+  font-weight: 600;
+  min-width: 100px;
+}
+.board_list dd {
+  padding-left: 10px;
+  padding-right: 120px;
+  text-align: left;
+}
+.board_list .cont {
+  padding: 20px;
+}
+
+.board-contents-section {
+  margin-bottom: 30px;
+}
+
+.board-contents-section .btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.board-contents-section .btn a {
+  padding: 10px 30px;
+  background: #3275cb;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+}
+
+/* main */

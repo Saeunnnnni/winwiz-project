@@ -1,0 +1,252 @@
+@import url(reset.css);
+.wrapper{
+  width: 100%;
+  min-width: 1500px;
+}
+.inner{
+  width: 1500px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.black-bg {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.show {
+  opacity: 1;
+}
+.subCover {
+  width: 100%;
+  background-color: #fff;
+  height: 0;
+  position: fixed;
+  top: 130px;
+  z-index: -1;
+  opacity: 90%;
+  visibility: hidden;
+  transition: height 0.3s;
+}
+
+.down {
+  visibility: visible;
+  height: 500px;
+}
+
+
+header {
+  top: 0;
+  position: fixed;
+  height: 130px;
+  width: 100%;
+  background-color: #373737;
+  z-index: 9999;
+}
+.section .inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+header .gnb {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header h1 {
+  left: 0;
+  top: 0;
+  display: block;
+  height: 130px;
+}
+
+header .logo a {
+  background: url(../images/common/top_logoW.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 137px;
+  height: 130px;
+  display: block;
+  text-indent: -9999px;
+  float: left;
+}
+
+
+#menu-btn i {
+  font-size: 35px;
+  display: none;
+}
+
+#close-btn {
+  display: none;
+  font-size: 35px;
+}
+
+header .gnb-list {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header .gnb li {
+  width: 100%;
+  height: 130px;
+  z-index: 10;
+}
+
+header .gnb .tit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+.gnb .tit > span {
+  display: block;
+  position: relative;
+  height: 100%;
+  line-height: 130px;
+  text-align: center;
+  font-size: 19px;
+}
+header .gnb li > a > span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+header .gnb li > a > span:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.1s;
+}
+
+header .sub-gnb {
+  margin-top: 35px;
+}
+
+header .sub-gnb li {
+  padding: 12px 0px;
+  width: 100px;
+  height: 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+
+header .sub-gnb li a {
+  color: #000000;
+}
+
+header .sub-gnb li a:hover {
+  color: #333ccc;
+  font-weight: 600;
+}
+
+/* header */
+
+
+
+
+
+main{
+  margin-top: 130px;
+  width: 100%;
+  /* min-width: 1500px; */
+}
+footer{
+  width:100%;  
+  margin: 200px 0 0 0;
+ }
+ 
+footer .inner{
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;  
+}
+
+.bottom-menu{
+  width: 100%; 
+  display: flex; 
+  background: #3ea2f0;  
+  height: 310px;
+}
+.btnM-list{
+  margin: 10px 0px 30px ;
+  line-height: 30px;
+  width:100%;  
+  display: flex;
+  justify-content:space-between;
+  margin-right: 40px;
+}
+
+.btnM-list>li>a{  
+  color: #ffff;
+  font-size: 22px; 
+  line-height:70px;
+ 
+}
+.btnM-list>li>a:hover{
+  font-weight: bold;
+}
+
+.depth>li{
+  line-height: 32px;
+}
+.depth>li>a{  
+  color: #ffff;
+  font-size: 15px;
+}
+.depth>li>a:hover{
+  font-weight: bold;
+}
+.company-info{
+  width: 100%; 
+  height: 90px;
+}
+.footer-icon{ 
+  margin:40px 0; 
+}
+.bottom-img{
+  width: 197px; 
+  float: left;
+  
+}
+.bottom-text{
+  color: #000000;
+  font-size: 13px;
+  float: left;
+  margin : 10px 86px;
+}
+
+.bottom-icon{  
+ float: right; 
+}
+
+@media screen and (min-width: 768px) {
+.BI_firstText{
+word-break: keep-all;
+}
+}
